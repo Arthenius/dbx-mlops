@@ -28,7 +28,6 @@ val testData = spark.read.parquet(dbutils.widgets.get("dataset"))
 val predictions = model.transform(testData)
 
 
-
 predictions.createOrReplaceGlobalTempView("bikesharing_predictions")
 
 display(predictions)
