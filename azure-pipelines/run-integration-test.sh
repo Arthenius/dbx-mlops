@@ -6,7 +6,7 @@ databricks workspace import_dir -o notebooks /devops-deployed
 run=$(databricks runs submit --json '{ 
   "name": "IntegrationTest",
     "new_cluster": {
-      "spark_version": "5.2.x-scala2.11",
+      "spark_version": "6.4.x-scala2.11",
       "node_type_id": "Standard_DS3_v2",
       "num_workers": 1
     },
