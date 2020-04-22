@@ -44,4 +44,3 @@ splits(2).write.mode("overwrite").save("/bikesharing-tutorial/holdout.parquet")
 dataset.schema
 
 // COMMAND ----------
-
